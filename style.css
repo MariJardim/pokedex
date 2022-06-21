@@ -1,0 +1,266 @@
+:root{
+   --cor-amarelo: #FBFF00;
+   --cor-amarelo-sombra: #FFD271;
+   --cor-azul-claro: #2FA4FF;
+   --cor-azul-sombra: #332FD0;
+   --cor-verde: #77D970;
+   --cor-verde-escuro: #007965;
+   --cor-vermelho: #FA1E0E;
+   --cor-vermelho-escuro: #8C0000;
+   --cor-cinza: #EEE;
+   --cor-cinza-escuro: #222831;
+   --cor-borda: #1B1A17;
+
+}
+
+
+/* var(--main-bg-color)   NO ELEMENTO*/
+
+
+.pokedex-topo{
+  background-color: var(--cor-vermelho);
+  width: 350px;
+  height: 110px;
+  margin: 0 auto;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  border: 2px solid var(--cor-borda);
+  z-index: 1;
+}
+.botao-start{
+  background-color: var(--cor-azul-claro);
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--cor-borda);
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0px 0px 0px 5px var(--cor-cinza), 0 0 0 7px var(--cor-borda), inset 0 -10px 15px 5px var(--cor-azul-sombra);
+  left: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+.botao-start::before{
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--cor-cinza);
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  box-shadow: 0 0px 10px 10px var(--cor-cinza) ;
+}
+.div-botoes{
+  position: absolute;
+  left: 120px;
+  top: 15px;
+}
+.botaozinho{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid var(--cor-borda);
+  margin-right: 5px;
+  
+  }
+  .btn-blue{
+    background-color: var(--cor-azul-claro);
+    box-shadow: inset 0 -2px 2px 2px var(--cor-azul-sombra);
+  }  
+  .btn-yellow{
+    background-color: var(--cor-amarelo);
+    box-shadow: inset 0 -2px 2px 2px var(--cor-amarelo-sombra);
+  } 
+  .btn-green{
+    background-color: var(--cor-verde);
+    box-shadow: inset 0 -2px 2px 2px var(--cor-verde-escuro);
+  }
+
+
+
+
+/********************* PARTE DE BAIXO ********************/
+/********************* PARTE DE BAIXO ********************/
+/********************* PARTE DE BAIXO ********************/
+/********************* PARTE DE BAIXO ********************/
+
+.pokedex-bottom{
+  background-color: var(--cor-vermelho);
+  width: 350px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 0 0 15px 15px;
+  border: 2px solid var(--cor-borda);
+  z-index: 0;
+  position: relative;
+  top: -2px;
+  box-shadow: inset 0 0 0 5px var(--cor-vermelho),inset -1px -1px 3px 7px var(--cor-vermelho-escuro);
+}
+.parte-branca{
+  width: 250px;
+  height: 200px;
+  background-color: var(--cor-cinza);
+  border-radius: 10px 10px 10px 0;
+  position: relative;
+  top: 40px;
+  margin: 0 auto;
+  border: 2px solid var(--cor-borda);
+  box-shadow: 2px 4px 4px 0px var(--cor-vermelho-escuro);
+  z-index: -2;
+}
+.tela{
+  width: 200px;
+  height: 130px;
+  background-color: var(--cor-cinza-escuro);
+  position: relative;
+  margin: 0 auto;
+  top: -130px;
+  text-align: center;
+}
+.tela-img{
+ width: 130px;
+ height: 130px;
+}
+.div-botaozin{
+position: absolute;
+left: 100px;
+top: 5px;
+}
+.botaozin{
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid var(--cor-borda);
+  background-color: var(--cor-vermelho);
+}
+.botaozin + .botaozin{
+margin-left: 20px;
+}
+.botao{
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--cor-borda);
+  border-radius: 50%;
+  background-color: var(--cor-vermelho);
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+}
+.menus{
+  position: absolute;
+  right: 25px;
+  bottom: 5px;
+}
+.menu{
+  width: 25px;
+  height: 3px;
+  border-top: 2px solid var(--cor-borda);
+  border-bottom: 2px solid var(--cor-borda);
+  margin-bottom: 3px;
+}
+.botao-preto{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--cor-cinza-escuro);
+  position: absolute;
+  left: 30px;
+  bottom: 100px;
+  box-shadow: 1px 1px 3px 2px ;
+  cursor: pointer;
+
+}
+.dois-botoes{
+  position: absolute;
+  display: flex;
+  justify-content:space-between;
+  width: 100px;
+  bottom: 130px;
+  left: 100px;
+}
+.btn{
+  width: 35px;
+  height: 4px;
+  border: 2px solid var(--cor-borda);
+  border-radius: 10px;
+  box-shadow: 2px 1px 6px 1px;
+}
+.botao-red{
+  background-color: var(--cor-vermelho);
+}
+.botao-blue{
+  background-color: var(--cor-azul-claro);
+}
+.verdi{
+  width: 80px;
+  height: 45px;
+  background-color: var(--cor-verde);
+  border: 2px solid var(--cor-borda);
+  border-radius: 3px;
+  position: absolute;
+  left: 105px;
+  bottom: 60px;
+} 
+.direcional{
+  background-color: var(--cor-cinza-escuro);
+  position: absolute;
+  border-radius: 3px;
+}
+.direcional-cima, .direcional-baixo{
+  width: 20px;
+  height: 30px;
+}
+.direcional-cima{
+  bottom: 105px;
+  right: 60px;
+}
+.direcional-baixo{
+  bottom: 55px;
+  right: 60px;
+}
+.direcional-esq{
+  bottom: 85px;
+  right: 80px;
+}
+.direcional-dir{
+  bottom: 85px;
+  right: 30px;
+}
+.direcional-dir, .direcional-esq{
+  width: 30px;
+  height: 20px;
+}
+.fundo-direcional{
+  width:20px;
+  height: 20px;
+  background-color: var(--cor-cinza-escuro);
+  position: absolute;
+  right: 60px;
+  bottom: 85px;
+ 
+}
+.fundo-direcional::before,
+.fundo-direcional::after {
+  content: '';
+  width: 10px;
+  height:10px;
+  border: 4px solid var(--cor-cinza-escuro);
+  position: absolute;
+  bottom: -3px;
+  border-top:0;
+}
+.fundo-direcional::after{
+  border-left: 0;
+  border-radius: 0 0 5px 0;
+  left:-10px;
+  top: -10px ;
+}
+.fundo-direcional::before{
+  border-right: 0;
+  border-radius: 0 0 0 5px;
+  right:-10px;
+  top: -10px
+}
